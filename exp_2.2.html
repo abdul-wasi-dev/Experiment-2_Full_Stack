@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce Product Page</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .filters {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    select, input {
+      padding: 8px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🛒 Product Page</h1>
+
+<div class="filters">
+  <select id="categoryFilter">
+    <option value="all">All Categories</option>
+    <option value="Shoes">Shoes</option>
+    <option value="Shirt">Shirt</option>
+    <option value="Trousers">Trousers</option>
+    <option value="Coat">Coat</option>
+  </select>
+
+  <input type="number" id="priceFilter" placeholder="Max Price">
+
+  <select id="sortPrice">
+    <option value="">Sort By Price</option>
+    <option value="low">Low → High</option>
+    <option value="high">High → Low</option>
+  </select>
+</div>
+
+<div class="products" id="productList"></div>
+
+<!-- Link JS file -->
+<script src="exp_2.2.js"></script>
+
+</body>
+</html>
