@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drawing Board</title>
+
+  <style>
+    #canvas {
+      border: 2px solid #3b82f6;
+      border-radius: 8px;
+      background-color: #f9fafb;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>SVG Drawing Board</h2>
+
+  <!-- Controls -->
+  <label>
+    Color:
+    <input type="color" id="colorPicker" value="#000000" />
+  </label>
+
+  &nbsp;&nbsp;
+
+  <label>
+    Size:
+    <input type="range" id="sizePicker" min="1" max="15" value="3" />
+  </label>
+
+  <br /><br />
+
+  <!-- SVG Canvas -->
+  <svg id="canvas" width="900" height="600"></svg>
+
+  <br /><br />
+
+  <button id="clear">Clear Canvas</button>
+
+  <script src="./EXP_2.js"></script>
+</body>
+</html>
